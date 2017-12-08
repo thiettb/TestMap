@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z24-8h-29n"/>
+                        <viewControllerLayoutGuide type="bottom" id="3sL-8S-Bc5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPS-ZY-VR1">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwl-yH-8gt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Address" id="ms4-Ta-Yvg">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="o6u-G5-NVE">
+                                            <connections>
+                                                <action selector="searchWithAddress:" destination="BYZ-38-t0r" id="3BG-HL-43P"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pPS-ZY-VR1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I0a-St-Zj9"/>
+                            <constraint firstItem="pPS-ZY-VR1" firstAttribute="top" secondItem="cwl-yH-8gt" secondAttribute="bottom" id="Koa-Ry-hOn"/>
+                            <constraint firstItem="pPS-ZY-VR1" firstAttribute="trailing" secondItem="cwl-yH-8gt" secondAttribute="trailing" id="Kw7-4a-57C"/>
+                            <constraint firstItem="pPS-ZY-VR1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="No2-LH-tm5"/>
+                            <constraint firstItem="pPS-ZY-VR1" firstAttribute="leading" secondItem="cwl-yH-8gt" secondAttribute="leading" id="feS-ra-1Tf"/>
+                            <constraint firstItem="pPS-ZY-VR1" firstAttribute="bottom" secondItem="3sL-8S-Bc5" secondAttribute="top" id="llR-Ha-K8V"/>
+                            <constraint firstAttribute="trailing" secondItem="pPS-ZY-VR1" secondAttribute="trailing" id="un1-Kn-v8r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleMapsContainer" destination="pPS-ZY-VR1" id="jB2-JD-lJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
